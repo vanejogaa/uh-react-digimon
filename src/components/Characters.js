@@ -1,8 +1,16 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Container } from 'react-bootstrap';
+import { useDispatch, useSelector } from 'react-redux';
 
 const Characters = ({characters = []}) => {
+  const dispatch = useDispatch()
+  const {posts, loadingPosts} = useSelector((state)=> state.PostsReducer)
+
+  
   return (
-    <div className='row'>
+    <Container>
+       <div className='row'>
     {characters.map((item, index) => (
             <div key={index} className='col mb-5'>
                 <div className='card' style={{minWidth: "100px"}}>
@@ -16,6 +24,8 @@ const Characters = ({characters = []}) => {
             </div>
         ))}
     </div>
+    </Container>
+   
   );
 };
 

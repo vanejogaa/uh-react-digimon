@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
           </Navbar.Brand>
           <Nav>
             <Link className="nav-link" to='/'>Home</Link>
-            <Link className="nav-link" to='/posts'>Posts</Link>
+            <Link className="nav-link" to='/posts'>Characters</Link>
             <Link className="nav-link" to='/about'>About</Link>
             <Link className="nav-link" to='/login'>Login</Link>
           </Nav>
