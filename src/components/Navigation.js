@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
       <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand>
-            Mis posts
+            Digimon
           </Navbar.Brand>
           <Nav>
             <Link className="nav-link" to='/'>Home</Link>

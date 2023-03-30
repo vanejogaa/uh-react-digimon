@@ -15,7 +15,7 @@ function App() {
 
   const [characters, setCharacters] = useState([]);
 
-  const inicialurl = "https://digimon-api.vercel.app/api/digimon";
+  const inicialurl = "";
 
   const fetchCharacters = (url) => {
     fetch(url)
