@@ -1,10 +1,13 @@
-import { Container } from "react-bootstrap";
 
-export default function LoginPage(){
+import React from "react";
+import { useAuth0 } from "@auth0/auth0-react";
 
-    return (
-        <Container>
-            <h1>Login page</h1>
-        </Container>
-    )
+export const LoginPage = () => {
+    const { loginWithRedirect } =useAuth0();
+
+    return <button onClick={() => loginWithRedirect()}>Login</button>
+    
+   
 }
+
+export default LoginPage;

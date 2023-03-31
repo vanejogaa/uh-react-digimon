@@ -32,12 +32,14 @@ function App() {
     <>
     <div className="App">
     <Navigation></Navigation>
+    
     <Routes>
       <Route exact path="/" element={<HomePage/>}></Route>
       <Route exact path="/posts" element={<PostsPage/>}></Route>
       <Route exact path="/about" element={<AboutPage/>}></Route>
       <Route exact path="/login" element={<LoginPage/>}></Route>
     </Routes>
+   
     </div>
    
 
