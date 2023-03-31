@@ -11,7 +11,7 @@ import { Auth0Provider } from '@auth0/auth0-react';
 import global_es from "./translations/es/global.json";
 import global_en from "./translations/en/global.json";
 import store from './store';
-import Pages from './components/Pages';
+
 
 i18next.init({
   interporlation: { escapeValue: false },
@@ -37,9 +37,7 @@ root.render(
  </I18nextProvider>
  </BrowserRouter>
   </Auth0Provider>
-
   </Provider>
  
-   
  
 );
