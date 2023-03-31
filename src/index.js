@@ -11,6 +11,7 @@ import { Auth0Provider } from '@auth0/auth0-react';
 import global_es from "./translations/es/global.json";
 import global_en from "./translations/en/global.json";
 import store from './store';
+import Pages from './components/Pages';
 
 i18next.init({
   interporlation: { escapeValue: false },
@@ -31,6 +32,7 @@ root.render(
   <Auth0Provider domain='dev-vsxjcjm5m7yponvx.us.auth0.com' clientId='xKxyrIzoBZPjuZd7JOQc5HpOUCklmCsL' redirectUrl={window.location.origin}>
   <BrowserRouter>
  <I18nextProvider i18n={i18next}>
+
       <App />
  </I18nextProvider>
  </BrowserRouter>

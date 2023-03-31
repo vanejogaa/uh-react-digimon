@@ -9,5 +9,6 @@ export default function HomePage(){
             <h1></h1>
             <img src={ImagenDigimon} style={{ maxWidth: '150%' }}></img>
         </Container>
+        
     )
 }

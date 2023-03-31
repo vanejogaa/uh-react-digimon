@@ -32,6 +32,7 @@ function App() {
     <>
     <div className="App">
     <Navigation></Navigation>
+    <Pages/>
     
     <Routes>
       <Route exact path="/" element={<HomePage/>}></Route>
@@ -44,7 +45,6 @@ function App() {
    
 
    <div className="container mt-5">
-   <Pages />
    <Characters characters={characters} />
     </div>
    </>
